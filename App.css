@@ -1,0 +1,170 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* APP WRAPPER */
+/* ============================= */
+.app-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fbff, #eef3f9);
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+.app-content {
+  width: 100%;
+}
+
+/* ============================= */
+/* SECTION SPACING */
+/* ============================= */
+.app-section:not(#About) {
+  padding: 80px 10%;
+}
+
+/* Large Screens */
+@media (min-width: 1400px) {
+  .app-section:not(#About) {
+    padding: 90px 14%;
+  }
+}
+
+/* Laptops */
+@media (max-width: 1200px) {
+  .app-section:not(#About) {
+    padding: 70px 8%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .app-section:not(#About) {
+    padding: 60px 6%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .app-section:not(#About) {
+    padding: 45px 5%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .app-section:not(#About) {
+    padding: 35px 4%;
+  }
+}
+
+/* ============================= */
+/* GLOBAL RESPONSIVE BANNER */
+/* ============================= */
+.global-banner {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.global-banner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.global-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .global-banner {
+    height: 420px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .global-banner {
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .global-banner {
+    height: 220px;
+    border-radius: 12px;
+  }
+}
+
+/* ============================= */
+/* PROFESSIONAL BUTTONS */
+/* ============================= */
+button,
+.about-btn,
+.contact-btn {
+  background: linear-gradient(135deg, #5f72ff, #9b23ea);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+button:hover,
+.about-btn:hover,
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/* HEADINGS STYLE */
+/* ============================= */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* CARD STYLE (GLOBAL) */
+/* ============================= */
+.card-style {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card-style:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}

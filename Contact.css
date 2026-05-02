@@ -1,0 +1,95 @@
+.contact-section {
+  padding: 80px 10%;
+  background: #f9fbff;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Banner */
+.contact-banner {
+  flex: 1;
+}
+
+/* Info Box */
+.contact-info-box {
+  flex: 1;
+}
+
+.contact-info-box h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Button */
+.contact-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,111,145,0.3);
+}
+
+/* Modal form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-btn {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ff6f91;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info-box {
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff4f9a;
+}
+
+.modal-box h2 {
+  color: #ff4f9a;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.modal-box {
+  position: relative;   /* ye line zaroor honi chahiye */
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 10px;
+  animation: popup 0.3s ease;
+}
+
+/* CLOSE BUTTON RIGHT SIDE */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;   /* ye hi main fix hai */
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: red;
+}

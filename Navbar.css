@@ -1,0 +1,157 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+/* ===== DESKTOP LINKS ===== */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #34495e;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #1abc9c;
+}
+
+/* underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #1abc9c;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== DESKTOP LOGOUT ===== */
+.logout-btn {
+  background: #1abc9c;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ===== MOBILE MENU ICON ===== */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE FULLSCREEN MENU ===== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  transition: 0.4s ease;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 22px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE LOGOUT BUTTON */
+.mobile-logout {
+  margin-top: 40px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  background: #1abc9c;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET + MOBILE */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logout-btn {
+    display: none; /* ❌ Hide top logout on mobile */
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 901px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}

@@ -1,0 +1,90 @@
+/* Full screen center */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Login heading */
+.login-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  animation: slideDown 0.8s ease;
+}
+
+/* Input fields */
+.login-container input {
+  width: 320px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #dcdfe6;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.2);
+}
+
+/* Buttons */
+.login-container button {
+  width: 320px;
+  padding: 12px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* Subtle card effect */
+.login-container::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 420px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.login-container p {
+  font-size: 13px;
+  opacity: 0.8;
+}

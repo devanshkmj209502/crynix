@@ -1,0 +1,100 @@
+/* ============================= */
+/* SERVICES BANNER LAYOUT */
+/* ============================= */
+.services-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  min-height: 420px; /* SAME AS HOME & ABOUT */
+  padding: 0 10%;
+}
+
+/* IMAGE SIDE */
+.services-image {
+  flex: 1;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.services-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT SIDE */
+.services-content {
+  flex: 1;
+}
+
+.services-content h1 {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.services-content span {
+  color: #7a8cff;
+}
+
+.services-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.services-btn {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.services-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 992px) {
+  .services-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .services-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .services-content h1 {
+    font-size: 30px;
+  }
+
+  .services-text {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-image {
+    height: 220px;
+  }
+
+  .services-content h1 {
+    font-size: 24px;
+  }
+}

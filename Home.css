@@ -1,0 +1,104 @@
+/* ===== BANNER ===== */
+.home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  background: linear-gradient(120deg, #e8f8f5, #ffffff);
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+
+.banner-left img {
+  width: 420px;
+  max-width: 100%;
+}
+
+.banner-right {
+  max-width: 500px;
+}
+
+.banner-right h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.banner-right p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ===== USERS SECTION ===== */
+.users-section {
+  padding: 60px 8%;
+  text-align: center;
+  background: #f9fbfd;
+}
+
+.users-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.user-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-card h4 {
+  margin: 5px 0;
+  color: #34495e;
+}
+
+.user-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .home-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-left img {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .banner-right h1 {
+    font-size: 24px;
+  }
+}
+.user-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #1abc9c;
+  color: white;
+}
